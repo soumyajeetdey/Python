@@ -1,0 +1,1419 @@
+#############################################
+https://github.com/giridhar276/honeywell1
+##############################################
+https://github.com/giridhar276/honeywell1/blob/main/stat.zip
+##############################################
+
+write a progam to capture filename from the keyboard and display the type of the file
+if the filename is ending with .py  .... display "Its python file"
+if the filename is ending with .pl   .... display "Its perl file"
+If the filename is ending with .c  ....... display "Its C lang file"
+if the filename is ending with .json ...  display "Its json file"
+
+
+filename= input('Enter any filename :')
+if filename.endswith('.py'):
+    print('Its python file')
+elif filename.endswith('pl'):
+    print('Its perl file')
+elif filename.endswith('.c'):
+    print('C file')
+###############################################################################
+
+write a program to capture any string from the keyboard and perform the below
+
+if the string is defined in uppercase......   convert the string to lower and display it
+
+if the string is defined in lowercase ...... convert the string to upper and displat it.
+
+string = input("Enter any string :")
+if string.isupper():
+    print(string.lower())
+elif string.islower():
+    print(string.upper())
+###############################################################################
+
+write a program to display the below output
+
+*
+**
+***
+****
+*****
+******
+*******
+********
+
+
+
+for value in range(1,11):
+    print('*' * value)
+
+###############################################################################
+
+write a program to read filename as input from the keyboard and display the below output
+
+example:
+
+Enter any filename :  hello.txt
+
+filename : hello
+extension: txt
+
+
+filename = input("Enter any filename :")
+
+output = filename.split(".")
+print("Filename :",output[0])
+print("Extension:",output[1])
+
+
+###############################################################################
+
+
+colors = [
+{
+"colors": "red",
+"values": "#f00"
+},
+{
+"colors": "green",
+"values": "#0f0"
+},
+{
+"colors": "blue",
+"values": "#00f"
+},
+{
+"colors": "cyan",
+"values": "#0ff"
+},
+{
+"colors": "magenta",
+"values": "#f0f"
+},
+{
+"colors": "yellow",
+"values": "#ff0"
+},
+{
+"colors": "black",
+"values": "#000"
+}
+]
+
+
+   
+write a program to display all the colors and its values.
+
+sample output:
+
+red    #ffoo
+yellow  #ff0
+magenta #f0f
+..
+..
+..
+
+for idict in colors:
+    print(idict['colors'].ljust(10),idict['values'])
+
+####################################################
+
+
+alist= [
+  {
+    "login": "mojombo",
+    "id": 1,
+    "node_id": "MDQ6VXNlcjE=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/1?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mojombo",
+    "html_url": "https://github.com/mojombo",
+    "followers_url": "https://api.github.com/users/mojombo/followers",
+    "following_url": "https://api.github.com/users/mojombo/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mojombo/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mojombo/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mojombo/subscriptions",
+    "organizations_url": "https://api.github.com/users/mojombo/orgs",
+    "repos_url": "https://api.github.com/users/mojombo/repos",
+    "events_url": "https://api.github.com/users/mojombo/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mojombo/received_events",
+    "type": "User",
+    "site_admin": False
+  },
+  {
+    "login": "defunkt",
+    "id": 2,
+    "node_id": "MDQ6VXNlcjI=",
+    "avatar_url": "https://avatars0.githubusercontent.com/u/2?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/defunkt",
+    "html_url": "https://github.com/defunkt",
+    "followers_url": "https://api.github.com/users/defunkt/followers",
+    "following_url": "https://api.github.com/users/defunkt/following{/other_user}",
+    "gists_url": "https://api.github.com/users/defunkt/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/defunkt/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/defunkt/subscriptions",
+    "organizations_url": "https://api.github.com/users/defunkt/orgs",
+    "repos_url": "https://api.github.com/users/defunkt/repos",
+    "events_url": "https://api.github.com/users/defunkt/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/defunkt/received_events",
+    "type": "User",
+    "site_admin": False
+  }
+]
+
+ write a program to display all the keys and values line by line.
+ 
+ 
+for mydict in alist:
+    for key,value in mydict.items():
+        print(key.ljust(20),value)
+
+ 
+############################################################################################
+
+
+
+define a dictionary as below
+
+data = {
+"id": "0001",
+"type": "donut",
+"name": "Cake",
+"image":
+{
+"url": "images/0001.jpg",
+"width": 200,
+"height": 200
+},
+"thumbnail":
+{
+"url": "images/thumbnails/0001.jpg",
+"width": 32,
+"height": 32
+}
+}
+
+write a program to display the below output:
+
+id                : 0001
+type              :donutk
+name              : Cake
+image.width       : 200
+image.height      : 200
+image.url         : images/0001.jpg
+thumbnail.width   : 32
+thumbnail.height  : 32
+thumbnail.url     : images/0001.jpg
+
+
+
+
+##############################################################################
+
+define dictionary as below
+
+
+ydict = {
+  "kind": "youtube#searchListResponse",
+  "etag": "1-m2yskBQFythfE4irbTIeOgYYfBU/PaiEDiVxOyCWelLPuuwa9LKz3Gk",
+  "nextPageToken": "CAUQAA",
+  "regionCode": "KE",
+  "pageInfo": {
+    "totalResults": 4249,
+    "resultsPerPage": 5
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "2-m2yskBQFythfE4irbTIeOgYYfBU/QpOIr3QKlV5EUlzfFcVvDiJT0hw",
+      "id": {
+        "kind": "youtube#channel",
+        "channelId": "UCJowOS1R0FnhipXVqEnYU1A"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "3-m2yskBQFythfE4irbTIeOgYYfBU/AWutzVOt_5p1iLVifyBdfoSTf9E",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "Eqa2nAAhHN0"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "4-m2yskBQFythfE4irbTIeOgYYfBU/2dIR9BTfr7QphpBuY3hPU-h5u-4",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "IirngItQuVs"
+      }
+    }
+  ]
+}
+
+
+write a program to display all etag  information from the dictionary
+
+1-m2yskBQFythfE4irbTIeOgYYfBU/PaiEDiVxOyCWelLPuuwa9LKz3Gk
+2-m2yskBQFythfE4irbTIeOgYYfBU/QpOIr3QKlV5EUlzfFcVvDiJT0hw
+3-m2yskBQFythfE4irbTIeOgYYfBU/AWutzVOt_5p1iLVifyBdfoSTf9E
+4-m2yskBQFythfE4irbTIeOgYYfBU/2dIR9BTfr7QphpBuY3hPU-h5u-4
+
+
+               
+##########################################################################
+
+info = [
+  {
+    "name": "Whiskers",
+    "species" : "cat",
+    "foods": {
+      "likes": ["celery", "strawberries"],
+      "dislikes": ["carrots"]
+    }
+  },
+  {
+    "name": "Woof",
+    "species" : "dog",
+    "foods": {
+      "likes": ["dog food"],
+      "dislikes": ["cat food"]
+    }
+  },
+  {
+    "name": "Fluffy",
+    "species" : "cat",
+    "foods": {
+      "likes": ["canned food"],
+      "dislikes": ["dry food"]
+    }
+  }
+]
+
+write a program to display the below output in the list format :
+( append all the 'likes' values to the list )
+
+Output:
+ ["celery", "strawberries", "dog food" ,"canned food"]
+ 
+ 
+ ####################################################################
+ 
+
+###############################################################################
+
+define list as below
+
+lang  = ["spark","spark","spark","java","unix","unix","python","python"]
+
+write a program to display each Unique item and the no.of times it is repeated
+
+Spark  : 3 times
+java   :  1 time
+unix   :  2 times
+python : 2 times
+
+
+###############################################################################
+
+data={"menu": {
+  "id": "file",
+  "value": "File",
+  "popup": {
+    "menuitem": [
+      {"value": "New", "onclick": "CreateNewDoc()"},
+      {"value": "Open", "onclick": "OpenDoc()"},
+      {"value": "Close", "onclick": "CloseDoc()"}
+    ]
+  }
+}}
+
+write the program to display the output
+
+new
+open
+close
+
+
+###############################################################################
+
+write a program to display the below IP addresses
+
+192.168.0.1
+192.168.0.2
+192.168.0.3
+..
+..
+192.168.0.10
+
+ip = '192.168.0.{}'
+for val in range(1,11):
+    print(ip.format(val))
+    
+    
+ip = '192.168.0.'
+for val in range(1,11):
+    print(ip + str(val))
+    
+    
+ip =  '192.168.{}.{}'
+for val in range(0,2):
+    for ival in range(1,11):
+        print(ip.format(val,ival))
+        
+        
+        
+ip =  '192.168.'
+for val in range(0,2):
+    subip = ip + str(val)
+    for ival in range(1,11):
+        finalip = subip +"." +  str(ival)
+        print(finalip)
+    
+
+###############################################################################
+
+define some list as below
+
+alist = ["google","oracle","microsoft"]
+
+write a program to
+add "http://www"  at the beginning and  
+add ".com" at tht end of the string
+
+Output:
+http://www.google.com
+http://www/.oracle.com
+http://www.microsoft.com
+
+###############################################################################
+
+
+write a program to display the below IP addresses
+
+192.168.0.1
+192.168.0.2
+192.168.0.3
+..
+..
+192.168.0.10
+192.168.1.1
+192.168.1.2
+192.168.1.3
+..
+..
+192.168.1.10
+
+ip =  '192.168.{}.{}'
+for val in range(0,2):
+    for ival in range(1,11):
+        print(ip.format(val,ival))
+        
+        
+        
+ip =  '192.168.'
+for val in range(0,2):
+    subip = ip + str(val)
+    for ival in range(1,11):
+        finalip = subip +"." +  str(ival)
+        print(finalip)
+    
+
+###############################################################################
+
+define two lists
+alist = [10,20,30,40,50,10]
+blist = [40,50,60,70,80]
+
+display all the UNIQUE elements of both alist and blist  
+display all the COMMON elements of both alist and blist  
+
+###############################################################################
+
+###############################################################################
+
+write a program to display all the keys and values
+
+data = {
+  "name"   : "John Smith",
+  "sku"    : "20223",
+  "price"  : 23.95,
+  "shipTo" : { "name" : "Jane Smith",
+               "address" : "123 Maple Street",
+               "city" : "Pretendville",
+               "state" : "NY",
+               "zip"   : "12345" },
+  "billTo" : { "name" : "John Smith",
+               "address" : "123 Maple Street",
+               "city" : "Pretendville",
+               "state" : "NY",
+               "zip"   : "12345" }
+}
+
+expected output :
+name       : John Smith
+sku        : 20223
+name       : Jane Smith
+address    : 123 Maple Street
+city       : Pretendville
+state      : NY
+zip        : 12345
+name       : John Smith
+address    : 123 Maple Street
+city       : Pretendville
+state      : NY
+zip        : 12345
+
+
+###############################################################################
+
+data = {
+  "fruits": [ "apple", "orange", "pear" ],
+  "vegetables": [
+    {
+      "veggieName": "potato",
+      "veggieLike": true
+    },
+    {
+      "veggieName": "broccoli",
+      "veggieLike": false
+    }
+  ]
+}
+
+write a program to display the below output:
+apple
+orange
+pear
+potato
+broccoli
+
+
+
+https://github.com/giridhar276/honeywell1/blob/main/csvfiles.zip
+
+
+
+
+######################################################################
+
+write a program to read adult.csv and display workclass and occupation colums only
+######################################################################
+
+write a program to read adult.csv aand display distinct workclasses
+
+
+import csv
+import sys
+try:
+    workset = set()
+    with open('adult.csv','r') as fobj:
+        #converting file object to csv object
+        reader = csv.reader(fobj)
+        #process
+        for line in reader:
+            workclass = line[1]
+            workset.add(workclass)
+except Exception as err:  # default excepton # baseclass exception
+    print(err)
+    print(sys.exc_info())
+else:
+    # display output
+    for work in workset:
+        print(work)
+            
+
+
+
+
+
+import csv
+import sys
+try:
+    worklist = []
+    with open('adult.csv','r') as fobj:
+        #converting file object to csv object
+        reader = csv.reader(fobj)
+        #process
+        for line in reader:
+            workclass = line[1]
+            if workclass not in worklist:
+                worklist.append(workclass)
+except Exception as err:  # default excepton # baseclass exception
+    print(err)
+    print(sys.exc_info())
+else:
+    # display output
+    for work in worklist:
+        print(work)
+            
+
+
+######################################################################
+
+write a program to display the below information
+
+Total no. of males  : xxxx
+Total no. of females: xx
+
+
+'''
+write a program to display the below information
+
+Total no. of males  : xxxx
+Total no. of females: xx
+
+'''
+
+import csv
+import sys
+try:
+    male = 0
+    female = 0
+    with open('adult.csv','r') as fobj:
+        #converting file object to csv object
+        reader = csv.reader(fobj)
+        #process
+        for line in reader:
+            gender = line[9].strip()
+            if gender == 'Male':
+                male+=1
+            elif gender == 'Female':
+                female+=1
+        
+            
+except Exception as err:  # default excepton # baseclass exception
+    print(err)
+    print(sys.exc_info())
+else:
+    print("Total male count  :", male)
+    print("Total female count:", female)
+            
+
+###############################################################################
+
+write a program to read adult.csv , replace all the lines containing  United-States
+with USA and write the to output to adultinfo_US.csv file
+
+
+try:
+    with open('adult.csv','r') as fr, open('backup.csv','w') as fw:
+        for line in fr:
+            line = line.replace('United-States','USA')
+            fw.write(line)
+except Exception as err:
+    print(err)
+
+###############################################################################
+
+write a program to read supermarket_sales.csv and display the output based on the below conditions
+
+city is yangon
+customer type is Normal
+payment method is Cash
+Gender is Female
+
+
+import csv
+import sys
+try:
+    with open('supermarket_sales.csv','r') as fobj:
+        #converting file object to csv object
+        reader = csv.reader(fobj)
+        #process
+        for line in reader:
+            if line[2].strip() == 'Yangon' and line[3].strip() == 'Normal'  and     \
+            line[4].strip() == 'Female' and line[12].strip() == 'Cash' :
+                print(line)
+            
+except Exception as err:  # default excepton # baseclass exception
+    print(err)
+    print(sys.exc_info())
+
+###############################################################################
+
+write a program to read movies.csv and display all the different genres line by line.
+
+
+
+import csv
+movies = set()
+movieslist = []
+with open('movies.csv',encoding='utf-8') as fobj:
+    reader = csv.reader(fobj)
+    for line in reader:
+        genre= line[2]
+        output= genre.split("|")
+        movieslist.extend(output)
+    for movie in set(movieslist):
+        print(movie)
+    
+    
+    
+    
+    
+# ###################
+# os         : os level activities
+# math       : mathematical operations
+# sys        :  sys and python config data
+# shutil     : copy,move, rmtree  etc
+# urllib     : read the web, downloading the files
+# logging    : logging all the events
+# smtplib    : sending the mails
+# ftplib     : performing ftp operations
+# sysconfig  :  sys and python config data
+# zipfile    : create/extract the zip files
+# rarfile    : create/extract the rar files
+# cryptopgraphy : encrypting and decrypting the data or files
+# tarfile    : create/extract the tar files
+# filecmp    : comparing files or directories
+# sqlite3    : python default database
+# csv        : reading/writing csv files
+# xml        : reading/writing xml files
+# calendar   : display month,year calendar info
+# datetime   : working with date n time
+# time       : working with date n time
+# fractions  : working with decimal values
+# glob       : display all the files
+# heapq      : more of array operations ( getting largest among list )
+# subprocess : executing system commands in python (  subprocess.getoutput("ls -ltr")
+# pdb        : python debugger
+# platform   : platform information
+# random     : random operations ( shuffling , random digit ... )
+# re         : grep + awk + sed
+# socket     : networking programming
+# stat       : stats of the file
+# statistics : basic statistics
+# telnetlib  : accessing remote servers
+    
+    
+
+###################################################################################
+
+write a program to display the below information
+
+1) current working directory   
+2) login name
+3) current process id
+4) current python version
+5) all the libraries available in python
+6) all the environment variables
+7) operating system name
+8) platform name
+9)current date and time
+10)statistics of adult.csv file   ( display accessed tile , modified time, filesize )
+11)create empty file with today's timestamp	  ( Eg: 21_Sep_2023.csv )
+
+
+
+
+import os
+import sys
+ 
+try:
+    cwd = os.getcwd()
+    print("Current working directory :",cwd)
+    print("Login name :",os.getlogin())
+    print("process id :",os.getpid())
+    print("python version :",sys.version)
+    print("python version :",sys.version_info)
+    print(platform.python_version())
+    print(sys.modules)
+    print("--------------------")
+    print(os.environ)
+    print("--------------------")
+    print(os.name)
+    print(platform.platform())
+    print(datetime.datetime.now())
+    print(datetime.date.today())
+    # display stats of file
+    print(os.stat('adult.csv'))
+    #
+    print("file size :",os.stat('adult.csv').st_size)
+    print("file size :",os.path.getsize('adult.csv'),"bytes")
+    
+    filename = time.strftime("%d_%b_%Y.csv")
+    fobj =  open(filename,"w")
+    fobj.close()
+    
+    
+except Exception as err:
+    print(err)
+
+
+
+
+
+
+
+
+######################################################################
+
+write a program to display all the files from the current directory line by line 
+import os
+try:
+    files = os.listdir()
+    for file in files:
+        print(file)
+except Exception as err:
+    print(err)
+
+######################################################################
+write a program to display all the files from the C:\ line by line 
+
+
+######################################################################
+
+write a program to display the files ONLY from the current directory 
+
+import os
+try:
+    files = os.listdir()
+    for file in files:
+        if os.path.isfile(file):
+            print(file,"is a file")
+except Exception as err:
+    print(err)
+
+######################################################################
+
+write a program to display all the files and its size
+
+Output:
+file1.py   100 bytes
+file2.py    34 bytes
+..
+..
+
+ 
+import os
+try:
+    files = os.listdir()
+    for file in files:
+        if os.path.isfile(file):
+            print(file.ljust(20), os.path.getsize(file),"bytes")
+except Exception as err:
+    print(err)
+ 
+
+######################################################################
+create two folders as below in the local directory
+source       :  ( copy few files to the source folder)
+destination  :  --- will be empty --
+
+write a program to copy all the files from source folder to destination folder
+
+
+import os
+import shutil
+try:
+    source = r'C:\Users\gsripath\Desktop\programs\source'
+    destination = r'C:\Users\gsripath\Desktop\programs\destination'
+    
+    for file in os.listdir(source):
+
+        shutil.copy(source + "\\" + file,destination)
+        print(file,"copied to",destination)
+except Exception as err:
+    print(err)    
+    
+    
+    
+    
+    
+    
+import os
+import shutil
+try:
+    source = r'C:\Users\gsripath\Desktop\programs\source'
+    destination = r'C:\Users\gsripath\Desktop\programs\destination'
+    
+    for file in os.listdir(source):
+        if not os.path.isfile(destination + "\\" + file):
+            shutil.copy(source + "\\" + file,destination)
+            print(file,"copied to",destination)
+        else:
+            print(file,"is already existing in",destination)
+except Exception as err:
+    print(err)   
+
+
+
+
+import os
+import shutil
+try:
+    source = r'C:\Users\gsripath\Desktop\programs\source'
+    destination = r'C:\Users\gsripath\Desktop\programs\destination'
+    
+    for file in os.listdir(source):
+        if not os.path.isfile(destination + "\\" + file):
+            shutil.copy(source + "\\" + file,destination)
+            print(file,"copied to",destination)
+        else:
+            print(file,"is already existing in",destination)
+except Exception as err:
+    print(err)    
+######################################################################
+
+
+write a program to create 10 directories in the below format
+
+dir1
+dir2
+dir3
+..
+..
+dir10
+
+
+import os
+
+#os.mkdir("example")
+
+try:
+    for val in range(1,11):
+        dirname = "dir" + str(val)
+        if not os.path.isdir(dirname):
+            os.mkdir(dirname)
+        else:
+            print(dirname,"already exists")
+except Exception as err:
+    print(err) 
+
+########################################################################
+write a program to remove all the 10 directories that are created in the above task
+
+import os
+
+#os.mkdir("example")
+
+try:
+    for val in range(1,11):
+        dirname = "dir" + str(val)
+        if  os.path.isdir(dirname):
+            os.rmdir(dirname)
+            print(dirname,"deleted")
+        else:
+            print(dirname,"already exists")
+except Exception as err:
+    print(err)
+
+########################################################################
+
+write a program to delete all .csv files from the current directory
+
+
+
+
+########################################################################
+
+write a program to display the below information  ( use platform library)
+
+machine name  ( eg:  AMD64 )
+node name
+OS name ( Eg:  'Windows-10-10.0.19041-SP0' 
+processor
+python version  
+system info ( eg: 'Linux', 'Darwin', 'Java', 'Windows'. )
+
+#########################################################################
+
+write a program to display the below information  ( psutil library)
+
+-CPU percentage
+-virtual memory
+-swap memory
+-disk partitions
+-disk usage
+-display boot time
+- users who are logged in
+- display all the processes running
+
+
+
+
+#########################################################################
+# web scraping
+
+write a program to read https://www.google.com/ and display all the
+available links in that wegpage
+
+output :
+https://mail.google.com/mail/&ogbl
+https://www.google.com/imghp?hl=en&ogbl
+https://www.google.com/?authuser=0
+..
+..
+
+import requests       # used to read the web page
+# beautifulsoup  # used to parse the html content
+from bs4 import BeautifulSoup
+
+try:
+    url = 'https://www.google.com/'
+    response = requests.get(url)
+    if response.status_code == 200 :
+        soup = BeautifulSoup(response.text, 'html.parser')
+        for link in soup.find_all('a'):
+            print(link.get('href'))
+            print("------------")
+    else:
+        print("url is not functional")
+except Exception as err:
+    print(err)
+
+
+
+###############################
+# execute python program from another script
+###############################
+import subprocess
+# Define the command to run the other Python script
+command = ["python", "setmethods.py"]
+#command = ["bash", "abc.sh"]
+# Run the subprocess
+process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+# Wait for the subprocess to finish
+stdout, stderr = process.communicate()
+# Check the return code to see if the subprocess was successful
+return_code = process.returncode
+# Print the output 
+# str.decode() is used to convert bytes to string
+print("Standard Output:")
+print(stdout.decode())
+
+# Check the return code
+if return_code == 0:
+    print("Subprocess completed successfully.")
+else:
+    print(f"Subprocess failed with return code {return_code}.")
+
+
+
+
+
+
+https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+https://assets.datacamp.com/blog_assets/PandasPythonForDataScience.pdf
+    
+    
+    
+    
+    
+https://github.com/giridhar276/honeywell1/blob/main/pandas_assignments.zip
+
+
+
+
+
+
+pandas_assignments01_Getting_&_Knowing_Your_DataOccupation
+##########################################################
+
+
+step3
+
+users = pd.read_csv('u.user',sep="|",index_col = 'user_id')
+users
+
+
+step4
+users.head(25)
+
+step5
+users.tail(10)
+
+step6
+users.shape[0]
+
+step7
+users.shape[1]
+
+step8
+users.columns
+
+step9
+users.index
+
+
+step10
+users.dtypes
+
+step11
+users['occupation']
+
+
+step12
+users['occupation'].nunique()
+
+step13
+users['occupation'].mode()
+#users['occupation'].value_counts().head(1)
+
+step14
+users.describe()
+
+step15
+users.describe(include='all')
+
+
+step16
+users['occupation'].describe()
+
+step17
+users['age'].mean()
+
+step18
+users['age'].value_counts().tail()
+
+
+
+
+
+###############################################
+pandas_assignments02_Filtering_&_SortingChipotle
+###############################################
+
+
+
+step3
+chipo = pd.read_csv('chipotle.tsv',sep="\t")
+chipo
+
+
+step4
+#step1 :  remove  $ from item_price
+# clean the item_price column and transform it in a float
+prices = [float(value[1 : ]) for value in chipo.item_price]
+# reassign the column with the cleaned prices
+
+#step2 : assinging prices to chipo['item_price']
+chipo.item_price = prices
+
+
+#step3   delete the duplicates in item_name and quantity
+chipo_filtered = chipo.drop_duplicates(['item_name','quantity','choice_description'])
+
+
+# step4 : select only the products with quantity equals to 1
+chipo_one_prod = chipo_filtered[chipo_filtered.quantity == 1]
+
+#step4: filtering all the observations where item_price > 10
+chipo_one_prod[chipo_one_prod['item_price']>10]
+
+
+#step3   delete the duplicates in item_name and quantity
+chipo_filtered = chipo.drop_duplicates(['item_name','quantity','choice_description'])
+
+
+# step4 : select only the products with quantity equals to 1
+chipo_one_prod = chipo_filtered[chipo_filtered.quantity == 1]
+
+#step4: filtering all the observations where item_price > 10
+chipo_one_prod[chipo_one_prod['item_price']>10]
+
+
+step5
+
+# delete the duplicates in item_name and quantity
+chipo_filtered = chipo.drop_duplicates(['item_name','quantity'])
+
+# select only the products with quantity equals to 1
+chipo_one_prod = chipo_filtered[chipo_filtered.quantity == 1]
+
+# select only the item_name and item_price columns
+price_per_item = chipo_one_prod[['item_name', 'item_price']]
+
+# sort the values from the most to less expensive
+price_per_item.sort_values(by = "item_price", ascending = False).head(20)
+
+
+step6
+
+
+
+
+step7
+
+
+
+step8
+
+
+
+step9
+
+
+
+
+
+
+import requests
+from bs4 import BeautifulSoup
+
+keyword = input('Enter your product :')
+
+urlA = 'https://www.amazon.in/s?k='+keyword+''
+urlF = 'https://www.flipkart.com/search?q='+keyword+''
+urlR = 'https://www.reliancedigital.in/search?q='+keyword+''
+
+urlH = 'https://www.happimobiles.com/mobiles/all?search=&q='+keyword+''
+urlL = 'https://www.lotmobiles.com/catalogsearch/result/?q='+keyword+''
+urlP = 'https://www.paiinternational.in/SearchResults.aspx?search='+keyword+''
+urlB = 'https://www.bajajelectronics.com/product/search?q='+keyword+''
+
+prices = {}
+def scrape(url):
+    if url == urlF:
+        try:
+            res = requests.get(url).content
+            soup = BeautifulSoup(res, 'html.parser')
+            itemF = soup.find_all('div', class_='_4rR01T')
+            costF = soup.find_all('div', class_='_30jeq3 _1_WHN1')
+            #print(itemF[0].text + " " + costF[0].text)
+            costF = costF[0].text[1:]
+            prices["Flipkart"] = costF
+            print('Data is Retrieved Successfully!!')
+            print('========================================================')
+        except Exception as e:
+            print('data from Flipkart is not found')
+
+    elif url == urlA:
+        try:
+            res = requests.get(url).content
+            soup = BeautifulSoup(res, 'html.parser')
+            itemA = soup.find_all('span', class_='a-size-medium a-color-base a-text-normal')
+            costA = soup.find_all('span', class_='a-offscreen')
+            #print(itemA[0].text + " " + costA[0].text)
+            costA = costA[0].text[1:]
+            prices["Amazon"] = costA
+            print('Data is Retrieved Successfully!!')
+            print('========================================================')
+        except Exception as e:
+            print('data from amazon is not found')
+
+    elif url == urlR:
+        try:
+            res = requests.get(url).content
+            soup = BeautifulSoup(res, 'html.parser')
+            itemR = soup.find_all('p', class_='sp__name')
+            costR = soup.find_all('span', class_='sc-bxivhb cHwYJ')
+            #print(itemR[0].text + " " + costR[0].text)
+            costR = costR[0].text[1:]
+            prices["Reliance"] = costR
+            print('Data is Retrieved Successfully!!')
+            print('========================================================')
+        except Exception as e:
+            print('data from reliance is not found')
+
+    elif url == urlH:
+        try:
+            res = requests.get(url).content
+            soup = BeautifulSoup(res, 'html.parser')
+            itemH = soup.find_all('a', class_='name')
+            costH = soup.find_all('div', class_='p-c')
+            #print(itemH[0].text + " " + costH[0].text)
+            costH = costH[0].text[1:]
+            prices["Happi Mobiles"] = costH
+            print('Data is Retrieved Successfully!!')
+            print('========================================================')
+        except Exception as e:
+            print('data from Happi mobiles is not found')
+    elif url == urlL:
+        try:
+            res = requests.get(url).content
+            soup = BeautifulSoup(res, 'html.parser')
+            itemL = soup.find_all('a', class_='product-item-link')
+            costL = soup.find_all('span', class_='price')
+            #print(itemL[0].text+ " " + costL[0].text)
+            costL = costL[0].text[1:]
+            prices["Lot Mobiles"] = costL
+            print('Data is Retrieved Successfully!!')
+            print('========================================================')
+        except Exception as e:
+            print('data from Lot mobiles is not found')
+
+    elif url == urlB:
+        try:
+            res = requests.get(url).content
+            soup = BeautifulSoup(res, 'html.parser')
+            itemB = soup.find_all('h3',class_='prodHeaderDesc mb10')
+            costB = soup.find_all('h3', class_='prodPrice d-inline')
+            #print(itemB[0].text+ " " + costB[0].text)
+            costB = costB[0].text[1:]
+            prices["Bajaj"] = costB
+            print('Data is Retrieved Successfully!!')
+            print('========================================================')
+        except Exception as e:
+            print('data from Bajaj is not found')
+
+def priceComparision():
+    print(f'Showing results for : {keyword} in different sites')
+    for item in prices.items():
+        print(item[0],":",item[1])
+        
+if __name__ == '__main__':
+    print('connecting to Flipkart.com')
+    scrape(urlF)
+    print('connecting to Amazon.in')
+    scrape(urlA)
+    print('connecting to Reliance')
+    scrape(urlR)
+    print('connecting to happi mobiles')
+    scrape(urlH)
+    print('connecting to Lot Mobiles')
+    scrape(urlL)
+    print('connecting to Bajaj Electronics')
+    scrape(urlB)
+    priceComparision()
+
+
+
+##########################################
+pandas_assignments03_GroupingOccupation
+###########################################
+
+
+step3:
+users = pd.read_csv('u.user',sep="|")
+users
+
+
+
+step4:
+users.groupby('occupation')['age'].mean()
+
+
+step5:
+# create a function
+def gender_to_numeric(x):
+    if x == 'M':
+        return 1
+    if x == 'F':
+        return 0
+
+# apply the function to the gender column and create a new column
+users['gender_n'] = users['gender'].apply(gender_to_numeric)
+
+
+a = users.groupby('occupation').gender_n.sum() / users.occupation.value_counts() * 100 
+
+# sort to the most male 
+a.sort_values(ascending = False)
+
+
+
+step6:
+users.groupby('occupation')['age'].agg(['min', 'max'])
+
+
+step7:
+users.groupby(['occupation', 'gender']).age.mean()
+
+
+step8:
+# create a data frame and apply count to gender
+gender_ocup = users.groupby(['occupation', 'gender']).agg({'gender': 'count'})
+
+# create a DataFrame and apply count for each occupation
+occup_count = users.groupby(['occupation']).agg('count')
+
+# divide the gender_ocup per the occup_count and multiply per 100
+occup_gender = gender_ocup/occup_count * 100
+
+# present all rows from the 'gender column'
+occup_gender.loc[: , 'gender']
+
+
+
+
+
+
+
+https://sites.engineering.ucsb.edu/~shell/che210d/numpy.pdf
+
+numpy cheatsheet : 
+https://assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf
+
+
+
+####################################################################
+step2:
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+
+titanic = pd.read_csv('train.csv')
+
+
+step5:
+males = len(titanic[titanic['Sex'] == 'male'])
+females =  len(titanic[titanic['Sex'] == 'female'])
+
+proportion = [males,females]
+
+plt.pie(proportion,explode=(0,0.05),labels = ['Male','Female'],colors=['red','blue'],
+        autopct='%1.1f%%',shadow=True,startangle=90)
+plt.title("Male vs Female Proportion")
+plt.show()
+#plt.savefig('finaloutput.jpg')
+
+
+#step6
+sns.lmplot(x = 'Age',y='Fare',data=titanic,hue='Sex',fit_reg = False)
+
+
+
+#step7
+titanic['Survived'].sum()
+
+# or
+cond = titanic['Survived'] ==1
+len(titanic[cond])
+
+
+#step8
+plt.hist(titanic['Fare'],bins=60)
+plt.xlabel('Fare')
+plt.ylabel('Count')
+plt.show()
+
+
+
+
+##############################################
+https://github.com/giridhar276/honeywell1/blob/main/stat.zip
+##############################################
+
+
+https://github.com/giridhar276/honeywell1/blob/main/linear.zip
+
+
+https://github.com/giridhar276/honeywell1/blob/main/deployment.zip
+
+
+https://github.com/giridhar276/honeywell1/blob/main/logistic.zip
+
+
+https://github.com/giridhar276/honeywell1/blob/main/knn.zip
+
+
+
+https://github.com/giridhar276/honeywell1/blob/main/decisiontree.zip
+
+
+
+https://github.com/giridhar276/honeywell1/blob/main/kmeans.zip
+
+
+
+
+
+
+
+
